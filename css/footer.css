@@ -5,14 +5,14 @@ footer {
 	flex-direction: column;
 	font-family: 'Manrope';
 	.content {
-		width: 1920px;
+		/* width: 1920px; */
 		height: fit-content;
 		display: flex;
 		gap: 80px;
-		padding: 162px;
+		/* padding: 162px; */
 		border: #f1f1f3 1px;
 		.left {
-			width: 480px;
+			/* width: 480px; */
 			height: fit-content;
 			display: flex;
 			flex-direction: column;
