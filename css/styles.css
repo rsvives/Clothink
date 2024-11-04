@@ -1,6 +1,9 @@
+* {
+	box-sizing: border-box;
+}
 main {
 	width: fit-content;
-	height: 2876px;
+	/* height: 2876px; */
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
@@ -8,20 +11,20 @@ main {
 	margin: 10em;
 
 	section.hero {
-		width: 1596px;
+		/* width: 1596px; */
 		height: fit-content;
 		display: flex;
 		gap: 300px;
 
 		.container {
-			width: 994px;
+			/* width: 994px; */
 			height: fit-content;
 			display: flex;
 			flex-direction: column;
 			gap: 36px;
 
 			.sub-container {
-				width: 994px;
+				/* width: 994px; */
 				height: fit-content;
 				display: flex;
 				gap: 7px;
@@ -54,7 +57,7 @@ main {
 			}
 
 			p.description {
-				width: 994px;
+				/* width: 994px; */
 				height: fit-content;
 				font-weight: 18px;
 				line-height: 150%;
@@ -94,7 +97,7 @@ main {
 			border-top: 1px solid #f1f1f3;
 			gap: 36px;
 			display: flex;
-			width: 1596px;
+			/* width: 1596px; */
 			height: fit-content;
 			padding: 30px 0px;
 
@@ -159,8 +162,8 @@ main {
 							}
 
 							#shape-photo {
-								width: 376px;
-								height: 384px;
+								/* width: 376px; */
+								/* height: 384px; */
 								background: #d9d9d9 50%;
 							}
 						}
