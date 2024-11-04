@@ -1,0 +1,325 @@
+main {
+	width: fit-content;
+	height: 2876px;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	font-family: 'Manrope';
+	margin: 10em;
+	section.hero {
+		width: 1596px;
+		height: fit-content;
+		display: flex;
+		gap: 300px;
+		.container {
+			width: 994px;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			gap: 36px;
+			.sub-container {
+				width: 994px;
+				height: fit-content;
+				display: flex;
+				gap: 7px;
+				h2.title {
+					width: fit-content;
+					height: fit-content;
+					font-weight: 48px;
+					line-height: auto;
+					text-align: left;
+					vertical-align: top;
+					color: #1a1a1a;
+					text-transform: uppercase;
+				}
+				.category {
+					width: fit-content;
+					height: fit-content;
+					display: flex;
+					gap: 10px;
+					/* padding: 14px 8px; */
+					p {
+						line-height: auto;
+						font-weight: 18px;
+						vertical-align: top;
+						text-align: left;
+						color: #98989a;
+					}
+				}
+			}
+			p.description {
+				width: 994px;
+				height: fit-content;
+				font-weight: 18px;
+				line-height: 150%;
+				text-align: left;
+				vertical-align: top;
+				color: #656567;
+			}
+		}
+		button {
+			width: fit-content;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			/* padding: 18px 30px; */
+			border-radius: 32px;
+			background: #ffd400;
+			border: none;
+			p {
+				width: fit-content;
+				height: fit-content;
+				line-height: 150%;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 150%;
+				text-align: left;
+				vertical-align: top;
+				color: #262626;
+			}
+		}
+	}
+	section.clothes {
+		.filters {
+			border-bottom: 1px solid #f1f1f3;
+			border-top: 1px solid #f1f1f3;
+			gap: 36px;
+			display: flex;
+			width: 1596px;
+			height: fit-content;
+			padding: 30px 0px;
+			button {
+				padding: 14px 24px;
+				gap: 4px;
+				width: fit-content;
+				height: fit-content;
+				border-radius: 32px;
+				background: white;
+				border: solid 1px #f1f1f3;
+			}
+			.active {
+				background: #262626;
+				color: white;
+			}
+		}
+		.clothes {
+			margin-top: 80px;
+			display: flex;
+			flex-direction: column;
+			gap: 80px;
+			width: fit-content;
+			height: fit-content;
+			.row {
+				width: 1596px;
+				height: fit-content;
+				gap: 30px;
+				display: flex;
+				article.garment {
+					background: url(./img/Garment.svg);
+					width: 376px;
+					display: flex;
+					flex-direction: column;
+					height: fit-content;
+					gap: 30px;
+					.photo {
+						width: 376px;
+						height: fit-content;
+						display: flex;
+						flex-direction: column;
+						gap: auto;
+						.shape {
+							width: 376px;
+							height: 384px;
+							transform: translateY(-84px);
+							border-radius: 21px;
+							background: #f7f7f8 url(./img/Garment.svg);
+							#shape-cart {
+								width: 96px;
+								height: 115px;
+								border-radius: 47px;
+								background: #d9d9d9;
+								transform: translate3d(292px, 302px);
+							}
+							#shape-photo {
+								width: 376px;
+								height: 384px;
+								background: #d9d9d9 50%;
+							}
+						}
+						.cart {
+							width: fit-content;
+							height: fit-content;
+							display: flex;
+							gap: 10px;
+							padding: 18px;
+							border-radius: 100px;
+							background: #ffd400;
+						}
+					}
+					.footer {
+						width: 376px;
+						height: fit-content;
+						gap: 6px;
+						display: flex;
+						flex-direction: column;
+						.title {
+							width: 376px;
+							height: fit-content;
+							font-size: 20px;
+							font-weight: bold;
+							line-height: 150%;
+							text-align: left;
+							vertical-align: top;
+							color: #262626;
+						}
+						.price {
+							color: #4c4c4d;
+							width: 376px;
+							height: fit-content;
+							font-size: 18px;
+							font-weight: medium;
+							text-align: left;
+							vertical-align: top;
+						}
+					}
+				}
+			}
+		}
+	}
+	section.footer {
+		align-items: center;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		width: 1596px;
+		height: fit-content;
+		gap: 100px;
+		display: flex;
+		.scrollbar {
+			width: 1374px;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 0px 10px;
+			background: #e4e4e7 100%;
+			border-radius: 100px;
+			.indicator {
+				width: 248px;
+				height: 7px;
+				border-radius: 31px;
+				background: #262626;
+			}
+		}
+		.buttons {
+			width: fit-content;
+			height: fit-content;
+			display: flex;
+			gap: 20px;
+			.button {
+				display: flex;
+				gap: 10px;
+				padding: 8px;
+				border-radius: 46px 100%;
+				border: #b3b3b3 1px solid;
+				align-items: center;
+				justify-content: center;
+				.icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 30px;
+					height: 30px;
+				}
+			}
+			.active {
+				color: #ffffff;
+				background: #262626;
+			}
+		}
+	}
+	section.testimonials {
+		width: 1596px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+		section.hero {
+			width: 1596px;
+			height: fit-content;
+			gap: 300px;
+			display: flex;
+			.content {
+				width: 1019px;
+				height: fit-content;
+				display: flex;
+				flex-direction: column;
+				gap: 36px;
+				.hero {
+					width: 1019px;
+					height: fit-content;
+					gap: 7px;
+					.title {
+						width: fit-content;
+						height: fit-content;
+						font-size: 48px;
+						font-weight: bold;
+						text-align: left;
+						vertical-align: top;
+						color: #1a1a1a;
+					}
+					.category {
+						width: fit-content;
+						height: fit-content;
+						display: flex;
+						gap: 10px;
+						padding: 14px 8px;
+						color: #98989a;
+						font-size: 18px;
+						font-weight: bold;
+						line-height: auto;
+						vertical-align: top;
+						text-align: left;
+					}
+				}
+				.content {
+					width: 1019px;
+					height: fit-content;
+					font-size: 18px;
+					font-weight: medium;
+					text-align: left;
+					vertical-align: top;
+					color: #656567;
+				}
+			}
+			section.button {
+				width: fit-content;
+				height: fit-content;
+				display: flex;
+				gap: 4px;
+				padding: 18px 30px;
+				border-radius: 32px;
+				button.content {
+					width: fit-content;
+					height: fit-content;
+					font-size: 18px;
+					font-weight: bold;
+					font-family: 'Manrope';
+					line-height: 150%;
+					text-align: left;
+					vertical-align: top;
+					color: #262626;
+				}
+			}
+		}
+		section.cards {
+			width: 1596px;
+			height: fit-content;
+			gap: 30px;
+			padding: 30px;
+			border-radius: 20px;
+			background: #fcfcfd;
+			border: #f7f7f8 solid 10x;
+		}
+	}
+}

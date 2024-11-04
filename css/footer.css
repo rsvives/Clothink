@@ -1,0 +1,146 @@
+footer {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Manrope';
+	.content {
+		width: 1920px;
+		height: fit-content;
+		display: flex;
+		gap: 80px;
+		padding: 162px;
+		border: #f1f1f3 1px;
+		.left {
+			width: 480px;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			img.logo {
+				width: 80px;
+				height: 80px;
+			}
+			.subtitle {
+				width: 480px;
+				height: fit-content;
+				display: flex;
+				gap: 10px;
+				input {
+					width: 313px;
+					height: fit-content;
+					display: flex;
+					gap: 4px;
+					padding: 16px 30px 16px 20px;
+					border-radius: 32px;
+					background: #fcfcfd;
+					border: #f1f1f3 1px;
+					font-weight: 18px;
+					line-height: 150%;
+					align-content: center;
+					color: #98989a;
+				}
+				button {
+					width: fit-content;
+					height: fit-content;
+					display: flex;
+					gap: 4px;
+					padding: 16px 30px;
+					border-radius: 32px;
+					background: #ffd400;
+					font-weight: 18px;
+					line-height: 150%;
+					color: #262626;
+					text-align: left;
+					border: none;
+				}
+			}
+		}
+		.right {
+			width: 1036px;
+			height: fit-content;
+			display: flex;
+			gap: 50px;
+			padding: 80px 0 80px 80px;
+			border: #f1f1f3 1px;
+			.row {
+				width: 200px;
+				height: fit-content;
+				display: flex;
+				flex-direction: column;
+				gap: 36px;
+				.title {
+					width: 200px;
+					height: fit-content;
+					font-weight: 20px;
+					line-height: 130%;
+					letter-spacing: -3%;
+					text-align: left;
+					color: #262626;
+				}
+				.links-container {
+					width: fit-content;
+					height: fit-content;
+					display: flex;
+					flex-direction: column;
+					gap: 18px;
+					font-weight: 18px;
+					line-height: 130%;
+					letter-spacing: -3%;
+					text-align: left;
+					vertical-align: top;
+					color: #656567;
+				}
+			}
+		}
+	}
+	.polities {
+		width: 1920px;
+		height: fit-content;
+		display: flex;
+		gap: auto;
+		padding: 40px 162px;
+		.content {
+			width: fit-content;
+			height: fit-content;
+			display: flex;
+			gap: 24px;
+			a {
+				text-decoration: none;
+				width: 168px;
+				height: fit-content;
+				p {
+					width: fit-content;
+					height: fit-content;
+					font-weight: 18px;
+					line-height: 130%;
+					letter-spacing: -3%;
+					text-align: left;
+					vertical-align: top;
+					color: #98989a;
+					border-right: 1px solid #f1f1f3;
+				}
+			}
+		}
+		.social-icons {
+			width: fit-content;
+			height: fit-content;
+			display: flex;
+			gap: 21px;
+			.logo {
+				width: fit-content;
+				height: fit-content;
+				display: flex;
+				gap: 10px;
+				background: #262626;
+				border-radius: 100%;
+				padding: 12px;
+				img {
+					width: 20px;
+					height: 20px;
+					color: wheat;
+				}
+			}
+		}
+	}
+}
