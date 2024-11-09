@@ -1,185 +1,471 @@
 * {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
-main {
-	width: fit-content;
-	/* height: 2876px; */
-	display: flex;
-	flex-direction: column;
-	gap: 80px;
-	font-family: 'Manrope';
-	margin: 10em;
-
-	section.hero {
-		/* width: 1596px; */
-		height: fit-content;
+body,
+html {
+	scrollbar-width: none;
+	div.loader {
+		/* display: none; */ /*No me va*/
+		width: 220px;
+		height: 220px;
+		border-radius: 50%;
+		border: 30px solid var(--yellow--primary);
+		border-left-color: #262626;
+		animation: loader 1s infinite;
 		display: flex;
-		gap: 300px;
-
-		.container {
-			/* width: 994px; */
-			height: fit-content;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		margin-top: 15em;
+	}
+}
+:root {
+	--yellow--primary: #ffd400;
+}
+header {
+	font-family: 'Manrope';
+	min-width: 100%;
+	nav {
+		display: flex;
+		padding: 1em;
+		margin-top: 1em;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 100%;
+		background: #ffffff;
+		border-bottom: 1px solid #f1f1f3;
+		ul {
 			display: flex;
-			flex-direction: column;
-			gap: 36px;
+			justify-content: center;
+			gap: 2em;
+			list-style: none;
+			margin-left: 6em;
 
-			.sub-container {
-				/* width: 994px; */
-				height: fit-content;
-				display: flex;
-				gap: 7px;
-
-				h2.title {
-					width: fit-content;
-					height: fit-content;
-					font-weight: 48px;
-					line-height: auto;
-					text-align: left;
-					vertical-align: top;
-					color: #1a1a1a;
-					text-transform: uppercase;
-				}
-
-				.category {
-					width: fit-content;
-					height: fit-content;
-					display: flex;
-					gap: 10px;
-
-					p {
-						line-height: auto;
-						font-weight: 18px;
-						vertical-align: top;
-						text-align: left;
-						color: #98989a;
-					}
+			li {
+				padding: 14px 20px;
+				text-transform: capitalize;
+				border-radius: 100px;
+				border: 1px solid #f1f1f3;
+				a {
+					text-decoration: none;
+					color: #656567;
+					font-size: 18px;
 				}
 			}
-
-			p.description {
-				/* width: 994px; */
-				height: fit-content;
-				font-weight: 18px;
-				line-height: 150%;
-				text-align: left;
-				vertical-align: top;
-				color: #656567;
+			li.active {
+				background: #f7f7f8;
+				a {
+					color: #262626;
+				}
 			}
-		}
-
-		button {
-			width: fit-content;
-			height: fit-content;
-			display: flex;
-			flex-direction: column;
-			gap: 4px;
-			border-radius: 32px;
-			background: #ffd400;
-			border: none;
-
-			p {
-				width: fit-content;
-				height: fit-content;
-				line-height: 150%;
-				font-size: 18px;
-				font-weight: bold;
-				line-height: 150%;
-				text-align: left;
-				vertical-align: top;
-				color: #262626;
+			li.shopping-cart {
+				padding: 14px;
+				background: var(--yellow--primary);
 			}
 		}
 	}
-
-	section.clothes {
-		.filters {
-			border-bottom: 1px solid #f1f1f3;
-			border-top: 1px solid #f1f1f3;
-			gap: 36px;
-			display: flex;
-			/* width: 1596px; */
-			height: fit-content;
-			padding: 30px 0px;
-
-			button {
-				padding: 14px 24px;
-				gap: 4px;
-				width: fit-content;
-				height: fit-content;
-				border-radius: 32px;
-				background: white;
-				border: solid 1px #f1f1f3;
-			}
-
-			.active {
-				background: #262626;
-				color: white;
-			}
-		}
-
-		.clothes {
-			margin-top: 80px;
+}
+main {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 6em;
+	margin: 5em;
+	font-family: 'Manrope';
+	section.hero {
+		display: flex;
+		gap: 12em;
+		section.header {
 			display: flex;
 			flex-direction: column;
-			gap: 80px;
-			width: fit-content;
-			height: fit-content;
-
-			.row {
-				width: 1596px;
-				height: fit-content;
-				gap: 30px;
+			gap: 4rem;
+			section.title {
 				display: flex;
+				max-width: 100%;
+				h1 {
+					text-transform: uppercase;
+					font-size: 3rem;
+				}
+				h3 {
+					color: #98989a;
+					text-transform: uppercase;
+					font-size: 14px;
+				}
+			}
+			p {
+				font-size: 16px;
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 100%;
+			}
+			p::first-letter {
+				text-transform: capitalize; /*No va*/
+			}
+		}
+		section.news {
+			display: flex;
+			gap: 16px;
+			width: 100%;
+			div.new {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				height: fit-content;
+				width: 100%;
+				padding: 30px 40px;
+				border: solid 1px #f1f1f3;
+				border-radius: 14px;
+				width: fit-content;
+				h2 {
+					text-transform: capitalize;
+				}
+				p {
+					color: #656567;
+				}
+				p::first-letter {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	section.filters {
+		border: 1px solid #f1f1f3;
+		border-radius: 100px;
+		display: flex;
+		gap: 10px;
+		padding: 10px;
+		width: fit-content;
+		margin: auto;
+		button {
+			border-radius: 100px;
+			padding: 10px;
+			text-transform: uppercase;
+			background: #f7f7f8;
+			border: 1px solid #f1f1f3;
+			font-size: 14px;
+			color: #4c4c4d;
+		}
+		button.active {
+			background: var(--yellow--primary);
+		}
+	}
+	section.collection {
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+		section.header {
+			display: flex;
+			gap: 4px;
+			h2 {
+				text-transform: uppercase;
+				font-size: 20px;
+			}
 
-				article.garment {
-					background: url(./img/Garment.svg);
-					width: 376px;
+			p {
+				font-size: 16px;
+				color: #656567;
+			}
+			p::first-letter {
+				text-transform: capitalize;
+			}
+		}
+		section.clothes {
+			display: flex;
+			gap: 2em;
+			article {
+				border-radius: 14px;
+				border: 1px solid #f1f1f3;
+				overflow: hidden;
+				width: 305px;
+
+				figure {
+					background: #f7f7f8;
+					img {
+						width: 305px;
+						height: 305px;
+						object-fit: contain;
+					}
+				}
+				figcaption {
+					background: #ffffff;
 					display: flex;
 					flex-direction: column;
-					height: fit-content;
-					gap: 30px;
+					gap: 2em;
+					width: 100vh;
+					padding: 30px 24px;
 
-					.photo {
-						width: 376px;
-						height: fit-content;
+					h2 {
+						font-size: 16px;
+						width: 100vh;
+					}
+					h2::first-letter {
+						text-transform: capitalize;
+					}
+					section.footer {
 						display: flex;
-						flex-direction: column;
-						gap: auto;
-
-						.shape {
-							width: 376px;
-							height: 384px;
-							transform: translateY(-84px);
-							border-radius: 21px;
-							background: #f7f7f8 url(./img/Garment.svg);
-
-							#shape-cart {
-								width: 96px;
-								height: 115px;
-								border-radius: 47px;
-								background: #d9d9d9;
-								transform: translate3d(292px, 302px);
-							}
-
-							#shape-photo {
-								/* width: 376px; */
-								/* height: 384px; */
-								background: #d9d9d9 50%;
-							}
+						gap: 8em;
+						h3 {
+							color: #98989a;
+							font-size: 16px;
 						}
-
-						.cart {
-							width: fit-content;
-							height: fit-content;
-							display: flex;
-							gap: 10px;
-							padding: 18px;
-							border-radius: 100px;
-							background: #ffd400;
+						h3::first-letter {
+							text-transform: capitalize;
 						}
 					}
 				}
 			}
 		}
+		section.footer {
+			width: 100%;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			gap: 11em;
+			div.scrollbar {
+				align-items: center;
+				background: #e4e4e7;
+				gap: 10px;
+				height: 5px;
+				display: flex;
+				width: 100%;
+				border-radius: 31px;
+
+				div.indicator {
+					background: #262626;
+					height: 5px;
+					width: 15em;
+					border-radius: 31px;
+				}
+			}
+			div.buttons {
+				display: flex;
+				gap: 1em;
+				.button {
+					border: 1px solid #b3b3b3;
+					border-radius: 46px;
+					padding: 8px;
+					width: 40px;
+					height: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						width: 24px;
+						height: 24px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 6px;
+					}
+				}
+				.active {
+					background: #262626;
+				}
+			}
+		}
+	}
+	section.product-detail {
+		display: flex;
+		div.product {
+			width: 500px;
+			height: 500px; /*Porque no va fit content 😅*/
+			img {
+				width: 500px;
+				object-fit: fill;
+				position: absolute;
+				background: #f7f7f8;
+				border-radius: 20px;
+			}
+			div.images {
+				display: flex;
+				flex-direction: column;
+				width: fit-content;
+				gap: 1em;
+				padding: 1em;
+				height: fit-content;
+				border-radius: 1em;
+				background: #ffffff;
+				position: absolute;
+
+				img {
+					object-fit: fill;
+					position: relative;
+					width: 3em;
+					border-radius: 0.5em;
+				}
+			}
+		}
+		div.details {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+			div.header {
+				display: flex;
+				width: fit-content;
+				div.title {
+					display: flex;
+					flex-direction: column;
+					gap: 55px;
+					p {
+						color: #656567;
+						font-size: 18px;
+						width: 20em; /* esto es muy guarro, pero me sirve */
+					}
+					p::first-letter {
+						text-transform: capitalize;
+					}
+					h1::first-letter {
+						text-transform: capitalize;
+					}
+				}
+				h3.price {
+					font-size: 30px;
+				}
+				div.buttons {
+					display: flex;
+					gap: 50px;
+					button {
+						border-radius: 32px;
+						padding: 24px 10px;
+						font-size: 18px;
+						width: 15em;
+						display: flex;
+						gap: 1em;
+						justify-content: center;
+						align-items: center;
+						height: fit-content;
+					}
+					button.buy {
+						background: #262626;
+						color: #f1f1f3;
+					}
+					button.cart {
+						border: 1px solid #f1f1f3;
+					}
+				}
+			}
+			div.blocks {
+				display: flex;
+				flex-direction: column;
+				div.block {
+					border-radius: 2em;
+					border: 1px solid #f1f1f3;
+					padding: 30px;
+					display: flex;
+					div.header {
+						display: flex;
+						flex-direction: column;
+						gap: 20px;
+						div.matherial {
+							display: flex;
+							flex-direction: column;
+							gap: 1em;
+
+							p {
+								font-size: 18px;
+							}
+							h3::first-letter {
+								text-transform: capitalize;
+							}
+						}
+						div.colour {
+							div.inputs {
+								border: 1px solid #f1f1f3;
+								width: fit-content;
+								height: 44px;
+								display: flex;
+								gap: 4px;
+								padding: 10px;
+								border-radius: 100px;
+								input {
+									border-radius: 100%;
+									width: 24px;
+									appearance: none;
+								}
+								input:checked {
+									background: white;
+								}
+								input#beige {
+									background: #cec4ba;
+								}
+								input#pink {
+									background: #d69ba0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	display: flex;
+	gap: 7em;
+	padding: 10em;
+	section.suscription {
+		display: flex;
+		flex-direction: column;
+		gap: 7em;
+		img {
+			width: 100px;
+		}
+		div.main {
+			display: flex;
+			flex-direction: row;
+			gap: 1em;
+			input {
+				border-radius: 32px;
+				padding: 30px 16px;
+				border: 1px solid #f1f1f3;
+				font-size: 18px;
+				padding: 16px 30px 16px 20px;
+				background: #fcfcfd;
+				gap: 4px;
+			}
+			button {
+				border-radius: 32px;
+				background: var(--yellow--primary);
+				border: none;
+				font-size: 18px;
+				padding: 30px 16px;
+				width: 147px;
+				height: 59px;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	section.menu {
+		display: flex;
+		gap: 50px;
+		div.row {
+			display: flex;
+			flex-direction: column;
+			h1 {
+				margin-bottom: 61px;
+				gap: 18px;
+			}
+			p {
+				font-size: 18px;
+				color: #656567;
+			}
+			p::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
